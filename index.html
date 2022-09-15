@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/todo.css">
+  <title>momentum</title>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon btn"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon btn"></button>
+      </div>
+      <ul class="play-list">
+        <li class="audioName a1"><audio class="audio audio1" controls><source src="https://drivemusic.club/dl/1eEvG0dhXJSISsM58IVJLg/1660687787/download_music/2014/02/cosmic-meditation-earth-elements.mp3" type="audio/mp3"></audio></li>
+      </ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" id="city"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <div class="todo">
+        <div class="wrapper">
+          <div class="todo-header">Your todo-list</div>
+          <div class="inputField">
+            <input type="text" placeholder="Add your new todo">
+            <button class="todo-button"><i class="fas fa-plus"><img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/xbox-cross.png" alt=""></i></button>
+          </div>
+          <ul class="todoList">
+          </ul>
+          <div class="footer">
+            <span>You have <span class="pendingTasks"></span> pending tasks</span>
+            <button>Clear All</button>
+          </div>
+        </div>
+        <script src="todo.js"></script>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" />
+    </div>
+  </main>
+  <footer class="footer1">
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+  <script src="playlist.js"></script>
+</body>
+</html>
